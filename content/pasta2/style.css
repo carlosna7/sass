@@ -1,18 +1,36 @@
-/* Error: Undefined variable.
- *    ,
- * 16 |         background: $color-1-1;
- *    |                     ^^^^^^^^^^
- *    '
- *   box.scss 16:21  @import
- *   style.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 16 \2502          background: $color-1-1;\d\a    \2502                      ^^^^^^^^^^\a    \2575 \a   box.scss 16:21  @import\a   style.scss 1:9  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
 }
+
+.container {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0 0 20px;
+}
+.container p {
+  color: #fff;
+}
+.container .box-container, .container .box-container:nth-child(4), .container .box-container:nth-child(3), .container .box-container:nth-child(2) {
+  display: flex;
+  background: grey;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.container .box-container:hover {
+  filter: grayscale(100);
+}
+.container .box-container:nth-child(2) {
+  background: lightblue;
+}
+.container .box-container:nth-child(3) {
+  background: greenyellow;
+}
+.container .box-container:nth-child(4) {
+  background: rgb(253, 150, 119);
+}
+
+/*# sourceMappingURL=style.css.map */
