@@ -1,3 +1,14 @@
-
+p {
+  display: flex;
+}
+p:hover {
+  cursor: pointer;
+}
+p span {
+  background: red;
+}
+p h1 {
+  background: grey;
+}
 
 /*# sourceMappingURL=style.css.map */

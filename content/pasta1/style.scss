@@ -1,0 +1,15 @@
+p {
+    display: flex;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    span {
+        background: red;
+    }
+
+    h1 {
+        background: grey;
+    }
+}
